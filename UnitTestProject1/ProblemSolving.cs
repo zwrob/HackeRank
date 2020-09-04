@@ -71,5 +71,25 @@ namespace UnitTestProject1
             string result = GridSearch.Search(G, P);
 
         }
+
+        [TestMethod]
+        public void TestSherlockAndAnagrams()
+        {
+            // https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
+
+            Assert.AreEqual(4, SherlockAndAnagrams.sherlockAndAnagrams("abba"));
+            Assert.AreEqual(0, SherlockAndAnagrams.sherlockAndAnagrams("abcd"));
+
+            Assert.AreEqual(3,SherlockAndAnagrams.sherlockAndAnagrams("ifailuhkqq"));
+            Assert.AreEqual(10, SherlockAndAnagrams.sherlockAndAnagrams("kkkk"));
+        }
+
+        [TestMethod]
+        public void TestFairRations()
+        {
+            //https://www.hackerrank.com/challenges/fair-rations/problem
+            Assert.AreEqual(4,FairRations.fairRations(new int[] { 4,5,6,7}));
+            Assert.AreEqual(5, FairRations.fairRations(new int[] { 2, 3, 4, 5, 6 }));
+        }
     }
 }
