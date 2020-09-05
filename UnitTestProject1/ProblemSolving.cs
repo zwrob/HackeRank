@@ -89,7 +89,7 @@ namespace UnitTestProject1
         {
             //https://www.hackerrank.com/challenges/fair-rations/problem
             Assert.AreEqual(4,FairRations.fairRations(new int[] { 4,5,6,7}));
-            Assert.AreEqual(5, FairRations.fairRations(new int[] { 2, 3, 4, 5, 6 }));
+            Assert.AreEqual(4, FairRations.fairRations(new int[] { 2, 3, 4, 5, 6 }));
         }
     }
 }
