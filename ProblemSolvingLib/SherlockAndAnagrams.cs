@@ -12,17 +12,34 @@ namespace ProblemSolvingLib
 
         public static int sherlockAndAnagrams(string s)
         {
-            int lMin = s.Length / 2;
-            int lMax = (int)Math.Ceiling((decimal)s.Length/2);
-            for (int i = 0; i < lMin; i++) 
+            int result = 0;
+            Dictionary<string, int> dict = new Dictionary<string, int>();
+            for (int i = 0; i < s.Length; i++) 
             {
-               // druga pętla dla początku teksu
-               for(int j=i;j< lMin; j++)
+                for (int j = 1; j <= s.Length - i  ; j++) 
                 {
-
+                    string txt = new String(s.Substring(i,j).OrderBy(x => x).ToArray());
+                    if (dict.ContainsKey(txt)) { dict[txt]++; }
+                    else
+                    {
+                        dict.Add(txt, 1);
+                    }
                 }
             }
-            return 0;
+            foreach (var map in dict)
+            {
+                result += (map.Value - 1) * map.Value;
+            }
+
+            return result / 2;
         }
+
+        private static string ReverseString(string srtVarable)
+        {
+            return new string(srtVarable.Reverse().ToArray());
+        }
+
+      
+
     }
 }
