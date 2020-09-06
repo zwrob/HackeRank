@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProblemSolvingLib;
 
@@ -90,6 +92,13 @@ namespace UnitTestProject1
             //https://www.hackerrank.com/challenges/fair-rations/problem
             Assert.AreEqual(4,FairRations.fairRations(new int[] { 4,5,6,7}));
             Assert.AreEqual(4, FairRations.fairRations(new int[] { 2, 3, 4, 5, 6 }));
+        }
+
+        [TestMethod]
+        public void TestGemStones()
+        {
+
+            Assert.AreEqual(2, Gemstones.gemstones(new string[] {"abcdde","baccd","eeabg" })); ;
         }
     }
 }
