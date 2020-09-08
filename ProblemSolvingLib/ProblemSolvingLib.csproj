@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlternatingCharacters.cs" />
+    <Compile Include="SuffixTree.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FairRations.cs" />
     <Compile Include="Gemstones.cs" />
     <Compile Include="GridSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SherlockAndAnagrams.cs" />
+    <Compile Include="StringFunctionCalculation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
