@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlternatingCharacters.cs" />
+    <Compile Include="BiggerIsGreater.cs" />
     <Compile Include="SuffixTree.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FairRations.cs" />

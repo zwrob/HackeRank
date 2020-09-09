@@ -128,6 +128,18 @@ namespace UnitTestProject1
             Assert.AreEqual(0, AlternatingCharacters.alternatingCharacters("BABABA"));
             Assert.AreEqual(4, AlternatingCharacters.alternatingCharacters("AAABBB"));
         }
+
+        [TestMethod]
+        public void TestBiggerIsdGreater()
+        {
+            // https://www.hackerrank.com/challenges/bigger-is-greater/problem
+            Assert.AreEqual("ba", BiggerIsGreater.biggerIsGreater("ab"));
+            Assert.AreEqual("no answer", BiggerIsGreater.biggerIsGreater("bb"));
+            Assert.AreEqual("hegf", BiggerIsGreater.biggerIsGreater("hefg"));
+            Assert.AreEqual("dhkc", BiggerIsGreater.biggerIsGreater("dhck"));
+            Assert.AreEqual("hcdk", BiggerIsGreater.biggerIsGreater("dkhc")); //!!!
+        }
+
     }
 }
 
