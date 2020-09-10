@@ -140,6 +140,14 @@ namespace UnitTestProject1
             Assert.AreEqual("hcdk", BiggerIsGreater.biggerIsGreater("dkhc")); //!!!
         }
 
+        [TestMethod]
+        public void TestAbsolutePermutation()
+        {
+            // https://www.hackerrank.com/challenges/absolute-permutation/problem
+           // można dodać tes funkcji  AbsolutePermutation.absolutePermutation
+        }
+
+
     }
 }
 
