@@ -211,10 +211,10 @@ namespace UnitTestProject1
         public void TestInsertionSort1()
         {
             //  https://www.hackerrank.com/challenges/insertionsort1/problem
-            //   InsertionSort.insertionSort1(5,new int[] { 2, 4, 6, 8, 3 });
-            //   InsertionSort.insertionSort1(14, new int[] { 1, 3, 5, 9, 13, 22, 27, 35, 46, 51, 55, 83, 87, 23, });
-            InsertionSort.insertionSort1(10 , new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 });
-            
+            InsertionSort.insertionSort1(5, new int[] { 2, 4, 6, 8, 3 });
+            InsertionSort.insertionSort1(14, new int[] { 1, 3, 5, 9, 13, 22, 27, 35, 46, 51, 55, 83, 87, 23, });
+            InsertionSort.insertionSort1(10, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 });
+
         }
 
     }
