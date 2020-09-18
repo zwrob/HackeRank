@@ -127,9 +127,9 @@ namespace EulerLib
         
         private bool Move(string movements, List<char[]> list) // ma zwracac liste dostępnych ruchów
         {
-
+            // Math.Pow( list.Count,3) - 6 jedn testowych : Your code did not execute within the time limits
             if (ctr > MAX_RECURSIVE_CALLS) { return false; }
-            if (movements.Length > 2*Math.Pow( list.Count,2) || 
+            if (movements.Length > Math.Pow( list.Count,3) || 
                 (this.results.Count > 0 && movements.Length > this.results.Min(x=>x.Length)) ) { return false; }
 
             ctr++;
