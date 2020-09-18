@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Euler.cs" />
     <Compile Include="ProblemSolving.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -56,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EulerLib\EulerLib.csproj">
+      <Project>{0d0a409e-c7bb-469b-9618-3140839b37c7}</Project>
+      <Name>EulerLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProblemSolvingLib\ProblemSolvingLib.csproj">
       <Project>{a28fb9d0-13c3-455c-8c48-7fc6756b920a}</Project>
       <Name>ProblemSolvingLib</Name>
