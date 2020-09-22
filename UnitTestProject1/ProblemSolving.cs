@@ -38,7 +38,7 @@ namespace UnitTestProject1
                 "3530"
             };
             */
-            
+
             string[] G = new string[]
           {
                 "123412",
@@ -52,7 +52,7 @@ namespace UnitTestProject1
                 "12",
                 "34"
             };
-            
+
             /*
             string[] G = new string[]
             {
@@ -80,10 +80,10 @@ namespace UnitTestProject1
         {
             // https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
 
-          //  Assert.AreEqual(4, SherlockAndAnagrams.sherlockAndAnagrams("abba"));
-        //  Assert.AreEqual(0, SherlockAndAnagrams.sherlockAndAnagrams("abcd"));
+            //  Assert.AreEqual(4, SherlockAndAnagrams.sherlockAndAnagrams("abba"));
+            //  Assert.AreEqual(0, SherlockAndAnagrams.sherlockAndAnagrams("abcd"));
 
-          //  Assert.AreEqual(3, SherlockAndAnagrams.sherlockAndAnagrams("ifailuhkqq"));
+            //  Assert.AreEqual(3, SherlockAndAnagrams.sherlockAndAnagrams("ifailuhkqq"));
             Assert.AreEqual(10, SherlockAndAnagrams.sherlockAndAnagrams("kkkk"));
         }
 
@@ -91,7 +91,7 @@ namespace UnitTestProject1
         public void TestFairRations()
         {
             //https://www.hackerrank.com/challenges/fair-rations/problem
-            Assert.AreEqual(4,FairRations.fairRations(new int[] { 4,5,6,7}));
+            Assert.AreEqual(4, FairRations.fairRations(new int[] { 4, 5, 6, 7 }));
             Assert.AreEqual(4, FairRations.fairRations(new int[] { 2, 3, 4, 5, 6 }));
         }
 
@@ -99,31 +99,31 @@ namespace UnitTestProject1
         public void TestGemStones()
         {
 
-            Assert.AreEqual(2, Gemstones.gemstones(new string[] {"abcdde","baccd","eeabg" })); ;
+            Assert.AreEqual(2, Gemstones.gemstones(new string[] { "abcdde", "baccd", "eeabg" })); ;
         }
 
         [TestMethod]
         public void TestStringFunctionCalculation()
         {///nieksońcozne !!!
             // https://www.hackerrank.com/challenges/string-function-calculation/problem
-        //  Assert.AreEqual(12, StringFunctionCalculation.MaxValue("banana"));
+            //  Assert.AreEqual(12, StringFunctionCalculation.MaxValue("banana"));
             //  Assert.AreEqual(12, StringFunctionCalculation.MaxValue("aaaaaa"));
             //  Assert.AreEqual(9, StringFunctionCalculation.MaxValue("abcabcddd"));
 
-         /*
-            Assert.AreEqual(9000, StringFunctionCalculation.MaxValue(
-            "abaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaaabaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaaabaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaaabaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaaabaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaa"
-            ));
-            */
+            /*
+               Assert.AreEqual(9000, StringFunctionCalculation.MaxValue(
+               "abaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaaabaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaaabaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaaabaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaaabaabbaaaaabbbbbbbabbbbaaaaaabbaababaaabaaabbbbaabbaaaaaaaaabbaaaabbababbaaabbababbaabaabbbbabbbaaaaaabbaaabbaaaaaaabbababaabbbbbbbbbbbbbbaabbabbbbaaababbaaaababbbbaaabbbbbaaabbabbabbbababbbbbaaaabababbbbbaaaaabababbbbabbbabaaababbaabbbbabbaabbaaaaabbbabaababbabbaababbbababaabaabbbaaababbabbbaabbaaababbbbaaaaabaababaabababbaabaabaabbbabbaabaaababbaabbbabbaaaabaaabbbbbbbabbabbaaaaabbaabbabbabaaabbbabababbbbbabaaabababbbbbababababababababbaababababababbbababaaabbaaababababbbaabbbabababaaabbaaaaaabaaababbbbbaaaaabaaaababaabaabbbabbbbbaaaaabaabbabbbabaababbbabbbababbaababaaabbbbaaaaaaabbabababaaaaaababbbbbabaabaababbabaaabbbbabaaaaaabbbbabbbbababaaaaaababbaababbabbaaaabaaaababbabbbbbbbabbbbaaabbabaaaaababbbaaaabbbaabbaaaaaaaaababaabbababbabbbaabbbabbbbabbaababbaaaababbbaaaababaaaabaabbabaaabaabaaabbbbbbbabbbabbbbbabbbbbbbbaabaaabbbabababaabbaaaabbabababbaabbaaabbbbaabaaabaabbaabbaabbabbbababababbaabbaabbbabbbababaaabbbabaaaabbbaaaaabbbaaababbbbbaabbaababbaaaabaabaabaabbbbbaaaabbbbaaabaabaa"
+               ));
+               */
             new ProblemSolvingLib.SuffixTree.SuffixTree("aaaaaa$").Visualize();
         }
 
-        
+
         [TestMethod]
         public void TestAlternatingCharacters()
         {
             // https://www.hackerrank.com/challenges/alternating-characters/problem
-            Assert.AreEqual(3,AlternatingCharacters.alternatingCharacters("AAAA"));
+            Assert.AreEqual(3, AlternatingCharacters.alternatingCharacters("AAAA"));
             Assert.AreEqual(4, AlternatingCharacters.alternatingCharacters("BBBBB"));
             Assert.AreEqual(0, AlternatingCharacters.alternatingCharacters("ABABABAB"));
             Assert.AreEqual(0, AlternatingCharacters.alternatingCharacters("BABABA"));
@@ -145,7 +145,7 @@ namespace UnitTestProject1
         public void TestAbsolutePermutation()
         {
             // https://www.hackerrank.com/challenges/absolute-permutation/problem
-           // można dodać tes funkcji  AbsolutePermutation.absolutePermutation
+            // można dodać tes funkcji  AbsolutePermutation.absolutePermutation
         }
 
         [TestMethod]
@@ -196,7 +196,7 @@ namespace UnitTestProject1
 
 
 
-            string res1 =  MatrixRotation.matrixRotation(
+            string res1 = MatrixRotation.matrixRotation(
                 new List<List<int>>()
             {
                 new List<int>(){1, 2, 3, 4},
@@ -221,38 +221,35 @@ namespace UnitTestProject1
         public void TestOrganizingContainers()
         {
             //https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem
-          
-            
-              Assert.AreEqual("Possible", 
-                  OrganizingContainers.organizingContainers(new int[][]{new int[]{ 1, 1 },new int[]{ 1, 1 }}));
-         
-              Assert.AreEqual("Impossible", 
-                  OrganizingContainers.organizingContainers(new int[][] { new int[] { 0, 2 }, new int[] { 1, 1 } }));
-         
-              Assert.AreEqual("Impossible",
-                  OrganizingContainers.organizingContainers(new int[][] { new int[] { 1, 3, 1 }, new int[] { 2, 1, 2 }, new int[] { 3, 3 ,3 } }));
 
-         
+
+            Assert.AreEqual("Possible",
+                OrganizingContainers.organizingContainers(new int[][] { new int[] { 1, 1 }, new int[] { 1, 1 } }));
+
+            Assert.AreEqual("Impossible",
+                OrganizingContainers.organizingContainers(new int[][] { new int[] { 0, 2 }, new int[] { 1, 1 } }));
+
+            Assert.AreEqual("Impossible",
+                OrganizingContainers.organizingContainers(new int[][] { new int[] { 1, 3, 1 }, new int[] { 2, 1, 2 }, new int[] { 3, 3, 3 } }));
+
+
             Assert.AreEqual("Possible",
                 OrganizingContainers.organizingContainers(new int[][] { new int[] { 0, 2, 1 }, new int[] { 1, 1, 1 }, new int[] { 2, 0, 0 } }));
 
             Assert.AreEqual("Possible",
                 OrganizingContainers.organizingContainers(new int[][] { new int[] { 999336263, 998799923 }, new int[] { 998799923, 999763019 } }));
 
-            
+
 
             Assert.AreEqual("Possible",
-                 OrganizingContainers.organizingContainers(new int[][] 
-                 { new int[] { 997612619, 934920795, 998879231, 999926463 }, 
+                 OrganizingContainers.organizingContainers(new int[][]
+                 { new int[] { 997612619, 934920795, 998879231, 999926463 },
                    new int[] { 960369681, 997828120, 999792735, 979622676 },
                    new int[] { 999013654, 998634077, 997988323, 958769423 } ,
-                   new int[] { 997409523, 999301350, 940952923, 993020546 } 
+                   new int[] { 997409523, 999301350, 940952923, 993020546 }
                         }));
 
         }
-
-        //https://www.hackerrank.com/challenges/frequency-queries/problem
-
 
         [TestMethod]
         public void TestHappyLadybugs()
@@ -287,5 +284,26 @@ namespace UnitTestProject1
 
         }
 
+
+        [TestMethod]
+        public void TestFreqQuery()
+        {
+            //https://www.hackerrank.com/challenges/frequency-queries/problem
+            var v1 = FreqQuery.freqQuery(
+                new List<List<int>>()
+                {
+                    new List<int>(){1,5},
+                    new List<int>(){1, 6},
+                    new List<int>(){3, 2},
+                    new List<int>(){1, 10},
+                    new List<int>(){1, 10},
+                    new List<int>(){1, 6},
+                    new List<int>(){2, 5},
+                    new List<int>(){3, 2}
+                }
+                );
+            Assert.AreEqual(0,v1[0]);
+            Assert.AreEqual(1, v1[1]);
+        }
     }
 }

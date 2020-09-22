@@ -44,6 +44,7 @@
     <Compile Include="AbsolutePermutation.cs" />
     <Compile Include="AlternatingCharacters.cs" />
     <Compile Include="BiggerIsGreater.cs" />
+    <Compile Include="FreqQuery.cs" />
     <Compile Include="HappyLadybugs.cs" />
     <Compile Include="InsertionSort.cs" />
     <Compile Include="MatrixRotation.cs" />
