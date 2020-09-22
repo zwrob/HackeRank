@@ -284,7 +284,6 @@ namespace UnitTestProject1
 
         }
 
-
         [TestMethod]
         public void TestFreqQuery()
         {
@@ -305,5 +304,18 @@ namespace UnitTestProject1
             Assert.AreEqual(0,v1[0]);
             Assert.AreEqual(1, v1[1]);
         }
+
+        [TestMethod]
+        public void TestSurfaceArea()
+        {
+            // https://www.hackerrank.com/challenges/3d-surface-area/problem
+            Assert.AreEqual(6, SurfaceArea.surfaceArea(new int[][] { new int[] { 1 } }));
+            Assert.AreEqual(60, SurfaceArea.surfaceArea(new int[][] { 
+                new int[] { 1, 3, 4 }, new int[] { 2, 2, 3 } , new int[] { 1, 2, 4 }  }
+            ));
+        }
+
+        // do zrobienia
+        // https://www.hackerrank.com/challenges/mining/problem
     }
 }
