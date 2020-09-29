@@ -301,7 +301,7 @@ namespace UnitTestProject1
                     new List<int>(){3, 2}
                 }
                 );
-            Assert.AreEqual(0,v1[0]);
+            Assert.AreEqual(0, v1[0]);
             Assert.AreEqual(1, v1[1]);
         }
 
@@ -310,9 +310,49 @@ namespace UnitTestProject1
         {
             // https://www.hackerrank.com/challenges/3d-surface-area/problem
             Assert.AreEqual(6, SurfaceArea.surfaceArea(new int[][] { new int[] { 1 } }));
-            Assert.AreEqual(60, SurfaceArea.surfaceArea(new int[][] { 
+            Assert.AreEqual(60, SurfaceArea.surfaceArea(new int[][] {
                 new int[] { 1, 3, 4 }, new int[] { 2, 2, 3 } , new int[] { 1, 2, 4 }  }
             ));
+        }
+
+        [TestMethod]
+        public void TestBomberMan()
+        {
+            //https://www.hackerrank.com/challenges/bomber-man/problem
+            var gg = BomberMan.bomberMan(3, new string[]
+            {
+                ".......",
+                "...O...",
+                "....O..",
+                ".......",
+                "OO.....",
+                "OO....."
+            });
+
+            /*
+          OOO.OOO
+          OO...OO
+          OOO...O
+          ..OO.OO
+          ...OOOO
+          ...OOOO
+           */
+        }
+
+        [TestMethod]
+        public void TestBigSorting()
+        {
+            // https://www.hackerrank.com/challenges/big-sorting/problem
+            var vg = BigSorting.bigSorting(new string[] {
+                "1",
+                "2",
+                "100",
+                "12303479849857341718340192371",
+                "3084193741082937",
+                "3084193741082938",
+                "111",
+                "200"
+            });
         }
 
         // do zrobienia
