@@ -46,6 +46,7 @@
     <Compile Include="BiggerIsGreater.cs" />
     <Compile Include="BigSorting.cs" />
     <Compile Include="BomberMan.cs" />
+    <Compile Include="CamelCase.cs" />
     <Compile Include="FreqQuery.cs" />
     <Compile Include="HappyLadybugs.cs" />
     <Compile Include="InsertionSort.cs" />

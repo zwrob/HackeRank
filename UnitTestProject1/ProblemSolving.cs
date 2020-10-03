@@ -315,7 +315,7 @@ namespace UnitTestProject1
             ));
         }
 
-        [TestMethod]
+        [TestMethod] // niezrobione
         public void TestBomberMan()
         {
             //https://www.hackerrank.com/challenges/bomber-man/problem
@@ -353,6 +353,12 @@ namespace UnitTestProject1
                 "111",
                 "200"
             });
+        }
+
+        [TestMethod]
+        public void TestCamelCase()
+        {
+            Assert.AreEqual(5,CamelCase.camelcase("saveChangesInTheEditor"));
         }
 
         // do zrobienia
