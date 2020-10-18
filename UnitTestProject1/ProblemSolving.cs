@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProblemSolvingLib;
@@ -359,6 +360,15 @@ namespace UnitTestProject1
         public void TestCamelCase()
         {
             Assert.AreEqual(5,CamelCase.camelcase("saveChangesInTheEditor"));
+        }
+
+        [TestMethod]
+        public void TestFibonacciModified()
+        {
+            //https://www.hackerrank.com/challenges/fibonacci-modified/problem
+            Assert.AreEqual(5,FibonacciModified.fibonacciModified(0,1,5));
+            Assert.AreEqual(BigInteger.Parse("84266613096281243382112"), FibonacciModified.fibonacciModified(0, 1, 10));
+
         }
 
         // do zrobienia

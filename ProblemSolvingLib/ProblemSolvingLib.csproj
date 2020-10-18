@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,7 @@
     <Compile Include="BigSorting.cs" />
     <Compile Include="BomberMan.cs" />
     <Compile Include="CamelCase.cs" />
+    <Compile Include="FibonacciModified.cs" />
     <Compile Include="FreqQuery.cs" />
     <Compile Include="HappyLadybugs.cs" />
     <Compile Include="InsertionSort.cs" />
