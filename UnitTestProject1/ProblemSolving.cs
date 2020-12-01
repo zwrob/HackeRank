@@ -371,6 +371,23 @@ namespace UnitTestProject1
 
         }
 
+        [TestMethod]
+        public void TestAlternate()
+        {
+            // https://www.hackerrank.com/challenges/two-characters/problem
+            Assert.AreEqual(5,Alternate.alternate("beabeefeab"));
+        }
+
+        [TestMethod]
+        public void TestMinimumNumber()
+        {
+            // https://www.hackerrank.com/challenges/strong-password/problem
+    
+            Assert.AreEqual(3, MinimumNumber.minimumNumber(3, "Ab1"));
+            Assert.AreEqual(1, MinimumNumber.minimumNumber(11, "#HackerRank"));
+            Assert.AreEqual(3, MinimumNumber.minimumNumber(3, "4470"));
+        }
+    
         // do zrobienia
         // https://www.hackerrank.com/challenges/mining/problem
     }
