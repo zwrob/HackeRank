@@ -27,7 +27,6 @@ namespace ProblemSolvingLib
             int uz = (password.Length < min_length) ? min_length - password.Length : 0;
 
             // Return the minimum number of characters to make the password strong
-            //  return (uz==0)? il: uz;
             return (uz >  il) ? uz : il;
         }
     }

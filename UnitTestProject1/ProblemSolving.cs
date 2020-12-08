@@ -387,7 +387,29 @@ namespace UnitTestProject1
             Assert.AreEqual(1, MinimumNumber.minimumNumber(11, "#HackerRank"));
             Assert.AreEqual(3, MinimumNumber.minimumNumber(3, "4470"));
         }
-    
+
+
+        [TestMethod]
+        public void TestIntroTutorial()
+        {
+
+            Assert.AreEqual(1, TutorialChallanges.introTutorial(4,new int[] { 1, 4, 5, 7, 9, 12 }));
+        }
+
+        [TestMethod]
+        public void TestAlternateString()
+        {
+        https://www.hackerrank.com/challenges/two-characters/problem
+
+         //   Assert.AreEqual(5, AlternateString.alternate("aerbgeaorba"));
+            Assert.AreEqual(5, AlternateString.alternate("beabeefeab"));
+            Assert.AreEqual(2, AlternateString.alternate("ab"));
+            Assert.AreEqual(8, AlternateString.alternate("asdcbsdcagfsdbgdfanfghbsfdab"));
+            Assert.AreEqual(0, AlternateString.alternate("asvkugfiugsalddlasguifgukvsa"));
+            Assert.AreEqual(8, AlternateString.alternate("cwomzxmuelmangtosqkgfdqvkzdnxerhravxndvomhbokqmvsfcaddgxgwtpgpqrmeoxvkkjunkbjeyteccpugbkvhljxsshpoymkryydtmfhaogepvbwmypeiqumcibjskmsrpllgbvc"));
+
+        }
+
         // do zrobienia
         // https://www.hackerrank.com/challenges/mining/problem
     }

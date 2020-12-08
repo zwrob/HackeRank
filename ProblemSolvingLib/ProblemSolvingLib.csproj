@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="AbsolutePermutation.cs" />
     <Compile Include="Alternate.cs" />
+    <Compile Include="AlternateString.cs" />
     <Compile Include="AlternatingCharacters.cs" />
     <Compile Include="BiggerIsGreater.cs" />
     <Compile Include="BigSorting.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="SherlockAndAnagrams.cs" />
     <Compile Include="StringFunctionCalculation.cs" />
     <Compile Include="SurfaceArea.cs" />
+    <Compile Include="TutorialChallanges.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

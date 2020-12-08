@@ -44,6 +44,16 @@ namespace UnitTestProject1
             
         }
 
+        [TestMethod]
+        public void TestPrimeSubsetSums()
+        {
+        https://www.hackerrank.com/contests/projecteuler/challenges/euler249/problem
+
+
+            var result = PrimeSubsetSums.GetSubsetsInfo(10, 4);            // 10 4 => 7 3
+       
+
+        }
     }
 }
 
