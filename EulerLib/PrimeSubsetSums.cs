@@ -54,16 +54,55 @@ namespace EulerLib
                 .SelectMany(t => list.Where(o => o.CompareTo(t.Last()) > 0),
                     (t1, t2) => t1.Concat(new int[] { t2 }));
 
+            /*
             if (length == checkedLength)
             {
                 h = h.Where(x => IsPrime(x.Sum()));
             }
+            */
 
             return h;
         }
 
-
         public static int[] GetSubsetsInfo(int n, int m)
+        {
+            // pobranie liczb ierwszych oraz maksymalnej sumy w zakresie do n
+            List<uint> primeNumbers = new List<uint>();
+            List<int> primeNumbersToCheck = new List<int>();
+            uint maxSum = 0;
+            for (int i = 2; i <= n; i++)
+            {
+                if (IsPrime(i))
+                {
+                    primeNumbersToCheck.Add(i);
+                    primeNumbers.Add((uint)i);
+                    maxSum += (uint)i;
+                }
+            }
+
+            for (int i = n + 1; i <= maxSum; i++)
+            {
+                if (IsPrime(i)) { primeNumbers.Add((uint)i); }
+            }
+
+            int maxSubsetLength = primeNumbersToCheck.Count;
+            int primeSubsetsNumer = 0; // na początek pojedyńcze np w {2,3,5,7} => {2},{3},{5},{7}
+            int primeSubsetsNumerLessThenM = 0;
+            for (int substeLength = 1; substeLength <= maxSubsetLength; substeLength++)
+            {
+                // pobierane pszczególne długości od 1
+                // np 2 z {2,3,5,7} to => {2,3},{2,5},{2,7},{3,5},{3,7},{5,7}
+                // trzeba zwróccic kombinację, którj suma składników daje licznę pierwszą
+                var combs = GetKCombs(primeNumbersToCheck, substeLength, substeLength);
+                var f = combs.Where(x => primeNumbers.IndexOf((uint)x.Sum()) > -1);
+                primeSubsetsNumer += f.Count();
+            }
+
+            return new int[2] { primeSubsetsNumer, primeSubsetsNumerLessThenM };
+        }
+
+
+            public static int[] GetSubsetsInfo_(int n, int m)
         {
             var primeNumbers = PrimeSubsetSums.GetPrimeNumbers(n);
 

@@ -410,7 +410,41 @@ namespace UnitTestProject1
 
         }
 
-        // do zrobienia
+        [TestMethod]
+        public void TestWeightedUniformStrings()
+        {
+            // https://www.hackerrank.com/challenges/weighted-uniform-string/problem
+
+            //  var t0 = WeightedUniformStrings.weightedUniformStrings("abccddde", new int[] { 1,3,12,5,9,10});
+           // var t1 = WeightedUniformStrings.weightedUniformStrings("aaabbbbcccdddaa", new int[] { 9, 7, 8, 12, 5 });
+
+
+            string fInput02s = System.IO.File.ReadAllText(@"D:\Temp\HackerRank\Weighted_Uniform_Strings\input02s.txt");
+            var fInput02l = System.IO.File.ReadAllLines(@"D:\Temp\HackerRank\Weighted_Uniform_Strings\input02l.txt");
+            string fOutput02 = System.IO.File.ReadAllText(@"D:\Temp\HackerRank\Weighted_Uniform_Strings\output02.txt");
+
+            int[] l02 = fInput02l.Select(x => int.Parse(x)).ToArray();
+            var t02 = WeightedUniformStrings.weightedUniformStrings(fInput02s, l02);
+
+        }
+
+        [TestMethod]
+        public void TestHackerrankInString()
+        {
+            // https://www.hackerrank.com/challenges/hackerrank-in-a-string/problem
+            Assert.AreEqual("YES", HackerrankInString.hackerrankInString("hhaacckkekraraannk"));
+            Assert.AreEqual("NO", HackerrankInString.hackerrankInString("rhbaasdndfsdskgbfefdbrsdfhuyatrjtcrtyytktjjt"));
+        }
+
+        [TestMethod]
+        public void TesttwoStrings()
+        {
+            // https://www.hackerrank.com/challenges/two-strings/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
+
+           // Assert.AreEqual("YES", HackerrankInString.twoStrings("hello", "world"));
+            Assert.AreEqual("NO", HackerrankInString.twoStrings("hi", "world"));
+        }
+
         // https://www.hackerrank.com/challenges/mining/problem
     }
 }

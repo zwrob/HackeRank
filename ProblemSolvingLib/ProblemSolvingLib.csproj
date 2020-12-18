@@ -52,6 +52,7 @@
     <Compile Include="CamelCase.cs" />
     <Compile Include="FibonacciModified.cs" />
     <Compile Include="FreqQuery.cs" />
+    <Compile Include="HackerrankInString.cs" />
     <Compile Include="HappyLadybugs.cs" />
     <Compile Include="InsertionSort.cs" />
     <Compile Include="MatrixRotation.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="StringFunctionCalculation.cs" />
     <Compile Include="SurfaceArea.cs" />
     <Compile Include="TutorialChallanges.cs" />
+    <Compile Include="WeightedUniformStrings.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

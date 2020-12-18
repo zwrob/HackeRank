@@ -17,11 +17,10 @@ namespace ProblemSolvingLib
             Dictionary<char, List<int>> hashmap = new Dictionary<char, List<int>>();
             foreach (char c in dist)
             {
-                //TODO zastąpic IndexOfAll
 
                 var indxs = s.Select((item, index) => new { value = item, index }).
                     Where(x => x.value == c).Select(it => it.index).ToList();
-                // var indxs = s.IndexOfAll($"{c}").ToList();
+                // var indxs = s.IndexOfAll($"{c}").ToList(); // na HR to nie działa !!
                 hashmap.Add(c, indxs);
             }
 
@@ -37,7 +36,7 @@ namespace ProblemSolvingLib
                 f0.Sort();
                
 
-                //strawdzenie czy litery sąnaprzemienne
+                //strawdzenie czy litery są naprzemienne
                 bool ok = true;
                 for (int i = 0; i < f0.Count; i++)
                 {
