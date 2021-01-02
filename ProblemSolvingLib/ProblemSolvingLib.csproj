@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbsolutePermutation.cs" />
+    <Compile Include="AlmostSorted.cs" />
     <Compile Include="Alternate.cs" />
     <Compile Include="AlternateString.cs" />
     <Compile Include="AlternatingCharacters.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="BigSorting.cs" />
     <Compile Include="BomberMan.cs" />
     <Compile Include="CamelCase.cs" />
+    <Compile Include="ClosestNumbers.cs" />
     <Compile Include="FibonacciModified.cs" />
     <Compile Include="FreqQuery.cs" />
     <Compile Include="HackerrankInString.cs" />

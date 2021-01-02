@@ -359,14 +359,14 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestCamelCase()
         {
-            Assert.AreEqual(5,CamelCase.camelcase("saveChangesInTheEditor"));
+            Assert.AreEqual(5, CamelCase.camelcase("saveChangesInTheEditor"));
         }
 
         [TestMethod]
         public void TestFibonacciModified()
         {
             //https://www.hackerrank.com/challenges/fibonacci-modified/problem
-            Assert.AreEqual(5,FibonacciModified.fibonacciModified(0,1,5));
+            Assert.AreEqual(5, FibonacciModified.fibonacciModified(0, 1, 5));
             Assert.AreEqual(BigInteger.Parse("84266613096281243382112"), FibonacciModified.fibonacciModified(0, 1, 10));
 
         }
@@ -375,14 +375,14 @@ namespace UnitTestProject1
         public void TestAlternate()
         {
             // https://www.hackerrank.com/challenges/two-characters/problem
-            Assert.AreEqual(5,Alternate.alternate("beabeefeab"));
+            Assert.AreEqual(5, Alternate.alternate("beabeefeab"));
         }
 
         [TestMethod]
         public void TestMinimumNumber()
         {
             // https://www.hackerrank.com/challenges/strong-password/problem
-    
+
             Assert.AreEqual(3, MinimumNumber.minimumNumber(3, "Ab1"));
             Assert.AreEqual(1, MinimumNumber.minimumNumber(11, "#HackerRank"));
             Assert.AreEqual(3, MinimumNumber.minimumNumber(3, "4470"));
@@ -393,7 +393,7 @@ namespace UnitTestProject1
         public void TestIntroTutorial()
         {
 
-            Assert.AreEqual(1, TutorialChallanges.introTutorial(4,new int[] { 1, 4, 5, 7, 9, 12 }));
+            Assert.AreEqual(1, TutorialChallanges.introTutorial(4, new int[] { 1, 4, 5, 7, 9, 12 }));
         }
 
         [TestMethod]
@@ -401,7 +401,7 @@ namespace UnitTestProject1
         {
         https://www.hackerrank.com/challenges/two-characters/problem
 
-         //   Assert.AreEqual(5, AlternateString.alternate("aerbgeaorba"));
+            //   Assert.AreEqual(5, AlternateString.alternate("aerbgeaorba"));
             Assert.AreEqual(5, AlternateString.alternate("beabeefeab"));
             Assert.AreEqual(2, AlternateString.alternate("ab"));
             Assert.AreEqual(8, AlternateString.alternate("asdcbsdcagfsdbgdfanfghbsfdab"));
@@ -416,7 +416,7 @@ namespace UnitTestProject1
             // https://www.hackerrank.com/challenges/weighted-uniform-string/problem
 
             //  var t0 = WeightedUniformStrings.weightedUniformStrings("abccddde", new int[] { 1,3,12,5,9,10});
-           // var t1 = WeightedUniformStrings.weightedUniformStrings("aaabbbbcccdddaa", new int[] { 9, 7, 8, 12, 5 });
+            // var t1 = WeightedUniformStrings.weightedUniformStrings("aaabbbbcccdddaa", new int[] { 9, 7, 8, 12, 5 });
 
 
             string fInput02s = System.IO.File.ReadAllText(@"D:\Temp\HackerRank\Weighted_Uniform_Strings\input02s.txt");
@@ -441,10 +441,45 @@ namespace UnitTestProject1
         {
             // https://www.hackerrank.com/challenges/two-strings/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
 
-           // Assert.AreEqual("YES", HackerrankInString.twoStrings("hello", "world"));
+            // Assert.AreEqual("YES", HackerrankInString.twoStrings("hello", "world"));
             Assert.AreEqual("NO", HackerrankInString.twoStrings("hi", "world"));
         }
 
+
+
+        [TestMethod]
+        public void TestAlmostSorted()
+        {
+            // 15 pkt na 30 !!!! dokonczyc
+            //https://www.hackerrank.com/challenges/almost-sorted/problem
+            //  AlmostSorted.almostSorted(new int[2] { 4 ,2 });
+            //   AlmostSorted.almostSorted(new int[3] { 3, 1, 2 });
+          //  AlmostSorted.almostSorted(new int[6] { 1, 5, 4, 3, 2, 6 });
+
+
+            // testcase 19  : reverse 37346 45458
+            var fInput19 = System.IO.File.ReadAllLines(@"D:\Temp\HackerRank\AlmostSorted\input19.txt");
+            var arr19 = fInput19[1].Split(' ');
+            int[] l19 = arr19.Select(x => int.Parse(x)).ToArray();
+            AlmostSorted.almostSorted(l19);
+        }
+
+        [TestMethod]
+        public void TestClosestNumbers()
+        {
+            // https://www.hackerrank.com/challenges/closest-numbers/problem
+           int[] o1 =  ClosestNumbers.closestNumbers(new int[] { -20, -3916237, -357920, -3620601, 7374819, 
+               -7330761, 30, 6246457, -6461594, 266854 }); // -20 30
+
+            int[] o2 = ClosestNumbers.closestNumbers(new int[] { -20, -3916237, -357920, -3620601, 7374819,
+                -7330761, 30, 6246457, -6461594, 266854, -520, -470 }); // -520 -470 -20 30
+        }
+
         // https://www.hackerrank.com/challenges/mining/problem
+
+
     }
 }
+
+
+// https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
